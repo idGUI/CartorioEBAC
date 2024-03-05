@@ -129,6 +129,7 @@ int main ()
 		printf("\t1 - Resgitrar Nome\n");
 		printf("\t2 - Consultar Nome\n");
 		printf("\t3 - Deletar   Nome\n");
+		printf("\t4 - Sair do Programa\n\n");
 		printf("Opção: ");
 		
 		scanf("%d", &opcao);
@@ -147,6 +148,11 @@ int main ()
 			
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("Programa encerrado. Pressione Enter para ferchar a janela.");
+			return(0);
 			break;
 			
 			default:
